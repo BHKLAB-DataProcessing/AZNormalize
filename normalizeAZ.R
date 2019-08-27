@@ -3,7 +3,6 @@
 options(stringsAsFactors = FALSE)
 
 
-
 drugs <- read.csv("/pfs/input/data_share_with_BHK/Annotations/compound_dictionary_280619.csv")
 screens <- list.files("/pfs/input/data_share_with_BHK/Raw_Data", pattern=".csv")
 screen <- screens[1]
