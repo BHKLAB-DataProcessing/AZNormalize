@@ -27,8 +27,8 @@ print(sprintf("Number of unique experiments: %s", length(unique(cell_drug))))#11
 
 max_conc <- unique(AZ_fitted$MAX_CONC_MICROMOLAR)
 #[1] 10.00  3.00  1.00 30.00  2.50  5.00  6.00  0.05
-curationCell <- readRDS("curationCell.rds")
-curationDrug <- readRDS("curationDrug.rds")
+curationCell <- readRDS("/pfs/curationCell.rds")
+curationDrug <- readRDS("/pfs/curationDrug.rds")
 for(col in colnames(curationCell)){
   curationCell[,col] <- as.character(curationCell[,col])
 }
