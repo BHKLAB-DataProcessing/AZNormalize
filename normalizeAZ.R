@@ -55,6 +55,11 @@ for(x in xx){
 }
 rownames(curationDrug) <- curationDrug$unique.drugid
 
+saveRDS(curationDrug, file="/pfs/out/curationDrug.rds")
+saveRDS(curationCell, file="/pfs/out/curationCell.rds")
+
+
+
 dosage_no <- 9
 ##[1] 14354 Number of experiments
 Az_raw_sensitivity <- array(NA, dim=c(length(uids), 9, 2),
